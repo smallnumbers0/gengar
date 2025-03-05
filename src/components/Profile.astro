@@ -1,11 +1,20 @@
 ---
 import Strava from '../components/Strava.astro';
 ---
-<Strava />
 <main>
-    <section>
+    <section class="header-container">
         <h1>Jacky Choi</h1>
+        <h2>Penn Engineering</h2>
+        <ul class="social-links">
+            <li><a href="https://github.com/smallnumbers0" target="_blank"><i class="fa fa-github"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/jackykchoi/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+        </ul>
     </section>
+    <section class="summary-container">
+        <p>Currently learning the art of Computer Science.</p>
+    </section>
+
+    <Strava />
 </main>
 
 <style>
@@ -18,13 +27,76 @@ import Strava from '../components/Strava.astro';
     }
     main {
         /* outline: 1px solid red; */
-        width: 75%;
+        display: flex;
+        align-items: center;
+        width: 50%;
         padding: 2rem;
+        flex-direction: column;
+        margin: 0 auto;
+        justify-content: center;
     }
     h1 {
         /* outline: 1px solid green; */
         text-align: left;
-        font-size: 2rem;
+        font-size: 1rem;
         color: aliceblue;
     }
+    h2 {
+        text-align: left;
+        font-size: 1rem;
+        color: aliceblue;
+    }
+
+    .header-container {
+        /* outline: 1px solid green; */
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 0.3rem;
+        width: 100%;
+    }
+
+    .title {
+        font-size: 1rem;
+        opacity: 0.8;
+        color: rgb(109, 226, 98);
+    }
+
+    .summary-container {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .summary-container, p {
+        font-size: 1rem;
+        color: aliceblue;
+        padding: 1rem 0;
+        text-align: left;
+    }
+
+    .social-links {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        gap: 1rem;
+    }
+
+    .social-links li {
+        display: inline-block;
+    }
+
+    .social-links a {
+        text-decoration: none;
+        font-size: 1rem;
+        color: aliceblue;
+        transition: color 0.3s;
+    }
+
+    .social-links a:hover {
+        color: #4717b7;
+    }
+
 </style>

@@ -2,9 +2,9 @@
 
 ---
 
-<div class="strava-container">
+<section class="strava-container">
     <iframe height='454' width='300' allowtransparency='true' src='https://www.strava.com/athletes/33642798/latest-rides/34c15a8ae739f37db2d2c3572fbb6f3dd20ac455'></iframe>
-</div>
+</section>
 
 <style>
     .strava-container {
@@ -19,5 +19,27 @@
     .strava-container:hover {
         background-color: rgb(163, 188, 21);
         transition: 0.8s;
+    }
+
+    @media screen and (max-width: 1245px) {
+        .strava-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            left: 1%;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        .strava-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            left: 1%;
+        }
     }
 </style>
