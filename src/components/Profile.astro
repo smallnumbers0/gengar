@@ -121,9 +121,13 @@ import Strava from '../components/Strava.astro';
     }
 
     .skills-container {
+        margin: 0 auto;
         width: 100%;
+        max-width: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr;
+        justify-content: left;
+        align-items: center;
         gap: 1rem;
 
     }
@@ -138,7 +142,13 @@ import Strava from '../components/Strava.astro';
         box-shadow: rgba(235, 232, 232, 0.786) 1.95px 1.95px 2.6px;
     }
 
-    @media screen and (max-width: 1000px) {
+    .skill-card:hover {
+        border: 1px solid rgb(93, 1, 254);
+        box-shadow: rgb(93, 1, 254) 1.95px 1.95px 2.6px;
+        transition: 0.7s;
+    }
+
+    @media screen and (max-width: 1260px) {
         .skills-container {
             display: grid;
             grid-template-columns: 1fr;
