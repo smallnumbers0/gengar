@@ -4,7 +4,7 @@ import Strava from '../components/Strava.astro';
 <main>
     <section class="header-container">
         <ul class="social-links">
-            <li><h1>Jacky Choi</h1></li>
+            <li><h1 class="title">Jacky Choi</h1></li>
             <li><a href="https://github.com/smallnumbers0" target="_blank"><i class="fa fa-github"></i></a></li>
             <li><a href="https://www.linkedin.com/in/jackykchoi/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
         </ul>
@@ -66,7 +66,7 @@ import Strava from '../components/Strava.astro';
     .title {
         font-size: 1rem;
         opacity: 0.8;
-        color: rgb(109, 226, 98);
+        color: rgb(226, 99, 20);;
     }
 
     .summary-container {
@@ -102,7 +102,7 @@ import Strava from '../components/Strava.astro';
     }
 
     .social-links a:hover {
-        color: #4717b7;
+        rgb(247, 69, 4);
     }
     i {
         font-size: 1rem;
@@ -117,7 +117,7 @@ import Strava from '../components/Strava.astro';
 
     .strava-link:hover {
         color: rgb(247, 69, 4);
-        transition: 0.7s;
+        transition: 0.25s;
     }
 
     .skills-container {
@@ -139,12 +139,14 @@ import Strava from '../components/Strava.astro';
         min-width: 370px;
         max-width: 370px;
         border-radius: 5px;
-        box-shadow: rgba(235, 232, 232, 0.786) 1.95px 1.95px 2.6px;
+        /* box-shadow: rgba(235, 232, 232, 0.786) 1.95px 1.95px 2.6px; */
+        box-shadow: rgba(255, 255, 255, 0.15) 0px 2px 4px, rgba(255, 255, 255, 0.05) 0px 2px 4px;
     }
 
     .skill-card:hover {
-        border: 1px solid rgb(93, 1, 254);
-        box-shadow: rgb(93, 1, 254) 1.95px 1.95px 2.6px;
+        border: 1px solid rgb(226, 99, 20);
+        /* box-shadow: rgb(93, 1, 254) 1.95px 1.95px 2.6px; */
+        box-shadow: rgb(226, 99, 20) 0px 2px 4px, rgb(226, 99, 20) 0px 2px 4px;
         transition: 0.7s;
     }
 
