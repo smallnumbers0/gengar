@@ -1,26 +1,27 @@
 ---
-import Layout from "../../layouts/Layout.astro"
-import Strava from "../../components/Strava.astro"
-import Navigation from "../../components/Navigation.astro"
+import Layout from "../layouts/Layout.astro";
+import Navigation from "../components/Navigation.astro";
 ---
+
 
 <Layout>
     <main>
-        <Navigation/>
+        <Navigation />
         <!-- <Strava /> -->
+    
     </main>
 </Layout>
 
 <style>
-
     * {
         box-sizing: border-box;
         padding: 0;
         margin: 0;
         font-size: 10px;
         font-family: Arial, Helvetica, sans-serif;
+        --orange-color: rgb(226, 99, 20);
     }
-   main {
+    main {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -30,6 +31,27 @@ import Navigation from "../../components/Navigation.astro"
         width: 50%;
         min-width: 400px;
         max-width: 1200px;
+    }
+    .summary-container {
+        width: 100%;
+    }
+    p {
+        line-height: 1.5rem;
+        font-size: 1rem;
+        color: white;
+        width: 100%;
+    }
+
+    .strava-link {
+        color: var(--orange-color);
+        font-size: 1rem;
+        text-decoration: none;
+        font-weight: 700;
+    }
+
+    .strava-link:hover {
+        color: rgb(247, 69, 4);
+        transition: 0.4s;
     }
 
     @media screen and (max-width: 1024px) {
