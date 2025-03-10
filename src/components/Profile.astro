@@ -1,6 +1,7 @@
 ---
 import Strava from '../components/Strava.astro';
 import Navigation from './Navigation.astro';
+import ProjectCard from './Project-Card.astro';
 ---
 <main>
     <Navigation />
@@ -15,11 +16,11 @@ import Navigation from './Navigation.astro';
         <p>Welcome! I am currently learning the art of Computer Science at the University of Pennsylvania. This site showcases my journey with Computer Science. I spend most of my time in balancing my academic interests like machine learning, health sciences, and data visualization, along with my athletic pursuits as a distance runner. These experiences sparked my interest into exploring data and programming leading me to work on projects using Python, Javascript, and various Web Development tools.
     </section>
 
-    <section class="skills-container">
-        <div class="skill-card"></div>
-        <div class="skill-card"></div>
-        <div class="skill-card"></div>
-        <div class="skill-card"></div>
+    <section class="projects-container">
+        <ProjectCard title="In Progress" href="#" img="public/favicon.svg"description="SFHFGSDGHDHDFGDFgSFHFGSDGHDHDFGDFgSFHFGSDGHDHDFGDFgSFHFGSDGHDHDFGDFgSFHFGSDGHDHDFGDFgSFHFGSDGHDHDFGDFgSFHFGSDGHDHDFGDFgSFHFGSDGHDHDFGDFgSFHFGSDGHDHDFGDFgSFHFGSDGHDHDFGDFgSFHFGSDGHDHDFGDFgSFHFGSDGHDHDFGDFgSFHFGSDGHDHDFGDFg"></ProjectCard>
+        <ProjectCard title="In Progress" href="#" description="" img="public/favicon.svg"></ProjectCard>
+        <ProjectCard title="In Progress" href="#" description="" img="public/favicon.svg"></ProjectCard>
+        <ProjectCard title="In Progress" href="#" description="" img="public/favicon.svg"></ProjectCard>
     </section>
 
     <!-- <Strava /> -->
@@ -48,7 +49,7 @@ import Navigation from './Navigation.astro';
 
     .header-container,
     .summary-container,
-    .skills-container {
+    .projects-container {
         width: 100%;    
         margin: 0;     
     }
@@ -118,28 +119,15 @@ import Navigation from './Navigation.astro';
         font-size: 1rem;
     }
 
-    .skills-container {
-        margin: 0 auto;
+    .projects-container {
         width: 100%;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        justify-content: left;
-        align-items: center;
-        gap: 0.4rem;
-
+        grid-template-columns: repeat(2, 1fr); 
+        margin: 1rem 0; 
+        gap: 0.5rem;
     }
 
-    .skill-card {
-        border: 1px solid rgb(255, 255, 255);
-        width: 100%;
-        height: 200px;
-        min-width: 200px;
-        max-width: none;
-        border-radius: 5px;
-        box-shadow: rgba(255, 255, 255, 0.15) 0px 2px 4px, rgba(255, 255, 255, 0.05) 0px 2px 4px;
-    }
-
-    .skill-card:hover {
+    .project-card:hover {
         border: 1px solid var(--orange-color);
         box-shadow: rgb(226, 99, 20) 0px 2px 4px, rgb(226, 99, 20) 0px 2px 4px;
         transition: 0.7s;
@@ -152,7 +140,7 @@ import Navigation from './Navigation.astro';
     }
 
     @media screen and (max-width: 900px) {
-        .skills-container {
+        .projects-container {
             display: grid;
             grid-template-columns: 1fr;
         }
