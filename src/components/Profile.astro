@@ -13,7 +13,7 @@ import Navigation from './Navigation.astro';
         <h2>Penn Engineering 2027</h2>
     </section>
     <section class="summary-container">
-        <p>Welcome! I am currently learning the art of Computer Science at the University of Pennsylvania. My passion lies in health/fitness software and data, the world of long distance running, and computational mathematics. I try to balance my time to chase my athletic pursuits along with my academic interests. You can track all my training here on <a class="strava-link" href="https://www.strava.com/athletes/33642798" target="_blank">Strava</a>.</p>
+        <p>Welcome! I am currently learning the art of Computer Science at the University of Pennsylvania. This site showcases my journey with Computer Science. I spend most of my time in balancing my academic interests like machine learning, health sciences, and data visualization, along with my athletic pursuits as a distance runner. These experiences sparked my interest into exploring data and programming leading me to work on projects using Python, Javascript, and various Web Development tools.
     </section>
 
     <section class="skills-container">
@@ -22,6 +22,7 @@ import Navigation from './Navigation.astro';
         <div class="skill-card"></div>
         <div class="skill-card"></div>
     </section>
+
     <!-- <Strava /> -->
 
 </main>
@@ -36,7 +37,6 @@ import Navigation from './Navigation.astro';
         --orange-color: rgb(226, 99, 20);
     }
     main {
-        /* outline: 1px solid red; */
         display: flex;
         align-items: center;
         justify-content: center;
@@ -47,7 +47,6 @@ import Navigation from './Navigation.astro';
         min-width: 400px;
     }
     h1, h2 {
-        /* outline: 1px solid green; */
         text-align: left;
         font-size: 1rem;
         color: aliceblue;
@@ -58,7 +57,6 @@ import Navigation from './Navigation.astro';
     }
 
     .header-container {
-        /* outline: 1px solid green; */
         margin: 0;
         padding: 0;
         display: flex;
@@ -113,18 +111,6 @@ import Navigation from './Navigation.astro';
         font-size: 1rem;
     }
 
-    .strava-link {
-        color: var(--orange-color);
-        font-size: 1rem;
-        text-decoration: none;
-        font-weight: 700;
-    }
-
-    .strava-link:hover {
-        color: rgb(247, 69, 4);
-        transition: 0.25s;
-    }
-
     .skills-container {
         margin: 0 auto;
         width: 100%;
@@ -143,13 +129,11 @@ import Navigation from './Navigation.astro';
         min-width: 280px;
         max-width: 370px;
         border-radius: 5px;
-        /* box-shadow: rgba(235, 232, 232, 0.786) 1.95px 1.95px 2.6px; */
         box-shadow: rgba(255, 255, 255, 0.15) 0px 2px 4px, rgba(255, 255, 255, 0.05) 0px 2px 4px;
     }
 
     .skill-card:hover {
         border: 1px solid var(--orange-color);
-        /* box-shadow: rgb(93, 1, 254) 1.95px 1.95px 2.6px; */
         box-shadow: rgb(226, 99, 20) 0px 2px 4px, rgb(226, 99, 20) 0px 2px 4px;
         transition: 0.7s;
     }

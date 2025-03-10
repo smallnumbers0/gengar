@@ -1,11 +1,14 @@
 ---
 ---
 
-<ul class="nav-container">
-    <li><a href="#">About</a></li>
-    <li><a href="#">Projects</a></li>
-    <li><a href="#">Running</a></li>
-</ul>
+<div class="navigation-container">
+    <a class="home-button" href="/">Home</a>
+    <div class="right-nav-container">
+        <a href="/about">About</a>
+        <a href="#">Projects</a>
+        <a href="/running/Running">Running</a>
+    </div>
+</div>
 
 <style>
     * {
@@ -13,18 +16,24 @@
         padding: 0;
         margin: 0;
     }
-    .nav-container {
-        /* outline: 1px solid blue; */
-        margin: 1rem auto;
+    .navigation-container {
+        display: flex;
+        flex-direction: row;
         width: 100%;
+        justify-content: space-between;
+    }
+    .home-button {
+        display: flex;
+        flex-direction: row;
+    }
+    .right-nav-container {
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
+        align-items: flex-end;
         font-size: 1rem;
         color: white;
-        list-style: none;
-        text-align: left;
-        padding: 0;
+        list-style: none;   
         gap: 1rem;
     }
 
@@ -33,14 +42,12 @@
         color: white;
         text-decoration: none;
         padding: 1rem 0;
-        /* border-right: 1px solid black ;
-        border-left: 1px solid black ;
-        border-bottom: 1px solid black; */
         border-radius: 1px;
+        font-size: 1rem;
     }
 
     a:hover {
-        color: #4717b7;
+        color: rgb(226, 99, 20);
         transition: 0.5s;
     }
 

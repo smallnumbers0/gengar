@@ -1,2 +1,41 @@
 ---
+import Layout from "../../layouts/Layout.astro"
+import Strava from "../../components/Strava.astro"
+import Navigation from "../../components/Navigation.astro"
 ---
+
+<Layout>
+    <main>
+        <Navigation/>
+        <Strava />
+    </main>
+</Layout>
+
+<style>
+    main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0 auto;
+        padding: 2rem;
+        width: 50%;
+        min-width: 400px;
+    }
+
+    @media screen and (max-width: 1024px) {
+        main {
+            min-width: 800px;
+        }
+    }
+
+    @media screen and (max-width: 900px) {
+        .skills-container {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+        main {
+            min-width: 370px;
+        }
+    }
+</style>
