@@ -26,19 +26,25 @@ import Navigation from "../components/Navigation.astro";
         --orange-color: rgb(226, 99, 20);
     }
     main {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        margin: 0 auto;
-        padding: 2rem;
-        width: 50%;
-        min-width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 2rem;
+    width: 50%;
+    min-width: 400px;
+    /* Make sure content aligns consistently */
+    max-width: 1200px; /* Add a consistent max-width */
+}
+    .summary-container {
+        width: 100%;
     }
     p {
         line-height: 1.5rem;
         font-size: 1rem;
         color: white;
+        width: 100%;
     }
 
     .strava-link {
@@ -50,7 +56,7 @@ import Navigation from "../components/Navigation.astro";
 
     .strava-link:hover {
         color: rgb(247, 69, 4);
-        transition: 0.25s;
+        transition: 0.4s;
     }
 
     @media screen and (max-width: 1024px) {
@@ -60,10 +66,6 @@ import Navigation from "../components/Navigation.astro";
     }
 
     @media screen and (max-width: 900px) {
-        .skills-container {
-            display: grid;
-            grid-template-columns: 1fr;
-        }
         main {
             min-width: 370px;
         }
