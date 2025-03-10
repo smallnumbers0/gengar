@@ -2,7 +2,7 @@
 ---
 
 <div class="navigation-container">
-    <a class="home-button" href="/">Home</a>
+    <a class="home-button title" href="/">Jacky Choi</a>
     <div class="right-nav-container">
         <a href="/about">About</a>
         <a href="#">Projects</a>
@@ -15,6 +15,16 @@
         box-sizing: border-box;
         padding: 0;
         margin: 0;
+    }
+    .title {
+        font-size: 1rem;
+        opacity: 1;
+        color: rgb(226, 99, 20);
+        box-shadow: inset 0 0 0 1.5px rgb(255, 98, 0);
+    }
+    .title:hover {
+        font-size: 1rem;
+        color: rgb(255, 98, 0);
     }
     .navigation-container {
         display: flex;
@@ -34,21 +44,22 @@
         font-size: 1rem;
         color: white;
         list-style: none;   
-        gap: 1rem;
     }
 
 
     a {
         color: white;
         text-decoration: none;
-        padding: 1rem 0;
-        border-radius: 1px;
+        padding: 0.5rem 0.5rem;
         font-size: 1rem;
+        margin: 0.5rem 0;
+        border-radius: 5px;
     }
 
     a:hover {
         color: rgb(226, 99, 20);
-        transition: 0.5s;
+        transition: 0.9s;
+        box-shadow: inset 0 0 0 1px rgb(255, 98, 0);
     }
 
     @media screen and (max-width: 1224px) {
