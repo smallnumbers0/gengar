@@ -2,6 +2,7 @@
 import Strava from '../components/Strava.astro';
 import Navigation from './Navigation.astro';
 import ProjectCard from './Project-Card.astro';
+import Footer from './Footer.astro';
 ---
 <main>
     <Navigation />
@@ -24,7 +25,7 @@ import ProjectCard from './Project-Card.astro';
         <ProjectCard title="In Progress" href="#" description="" img="/assets/astro.svg"></ProjectCard>
         <ProjectCard title="In Progress" href="#" description="" img="/assets/astro.svg"></ProjectCard>
     </section>
-
+    <Footer />
     <!-- <Strava /> -->
 
 </main>
@@ -107,7 +108,7 @@ import ProjectCard from './Project-Card.astro';
     }
 
     .profile-pic {
-        box-shadow: inset 0 0 0 2px rgb(148, 9, 235);
+        /* box-shadow: inset 0 0 0 2px rgb(148, 9, 235); */
         border-radius: 5px;
         width: 120px;
         height: 120px;
