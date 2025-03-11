@@ -2,7 +2,11 @@
 ---
 
 <div class="navigation-container">
-    <a class="home-button title" href="/">Jacky Choi</a>
+    <ul class="social-links">
+        <li><a href="/"><i class="fa fa-home"></i></a></li>
+        <li><a href="https://github.com/smallnumbers0" target="_blank"><i class="fa fa-github"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/jackykchoi/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+    </ul>
     <div class="right-nav-container">
         <a href="/about">About</a>
         <a href="/contact">Contact</a>
@@ -16,15 +20,28 @@
         padding: 0;
         margin: 0;
     }
+
+    .social-links {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        gap: 0.5rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .social-links li {
+        display: inline-block;
+    }
     .title {
         font-size: 1rem;
         opacity: 1;
-        color: rgb(226, 99, 20);
-        box-shadow: inset 0 0 0 1.5px rgb(255, 98, 0);
+        color: var(--purple-color);
+        box-shadow: inset 0 0 0 1.5px var(--purple-color);
     }
     .title:hover {
         font-size: 1rem;
-        color: rgb(255, 98, 0);
+        color: var(--purple-color);
     }
     .navigation-container {
         display: flex;
@@ -43,23 +60,32 @@
         align-items: flex-end;
         font-size: 1rem;
         color: white;
-        list-style: none;   
+        list-style: none;  
     }
 
 
     a {
         color: white;
         text-decoration: none;
-        padding: 0.5rem 0.5rem;
         font-size: 1rem;
         margin: 0.5rem 0;
         border-radius: 5px;
+        padding: 0 0.3 0.3 0.3rem;
     }
 
     a:hover {
-        color: rgb(226, 99, 20);
+        color: var(--purple-color);
         transition: 0.9s;
-        box-shadow: inset 0 0 0 1px rgb(255, 98, 0);
+    }
+
+    .right-nav-container a {
+        padding: 0.5rem;
+    }
+
+    .right-nav-container a:hover {
+        color: var(--purple-color);
+        transition: 0.9s;
+        box-shadow: inset 0 0 0 2px var(--purple-color);
     }
 
     @media screen and (max-width: 1240px) {

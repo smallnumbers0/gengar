@@ -2,19 +2,20 @@
 import Strava from '../components/Strava.astro';
 import Navigation from './Navigation.astro';
 import ProjectCard from './Project-Card.astro';
-import favicon from './assets/favicon.svg';
 ---
 <main>
     <Navigation />
-    <section class="header-container">
-        <ul class="social-links">
-            <li><a href="https://github.com/smallnumbers0" target="_blank"><i class="fa fa-github"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/jackykchoi/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-        </ul>
-        <h2>Penn Engineering 2027</h2>
-    </section>
+    <!-- <section class="intro-container">
+        <h1 id="name">Jacky</h1>
+    </section> -->
+
+            <!-- <li><a href="https://github.com/smallnumbers0" target="_blank"><i class="fa fa-github"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/jackykchoi/" target="_blank"><i class="fa fa-linkedin"></i></a></li> -->
     <section class="summary-container">
-        <p>Welcome! I am currently learning the art of Computer Science at the University of Pennsylvania. This site showcases my journey with Computer Science. I spend most of my time in balancing my academic interests like machine learning, health sciences, and data visualization, along with my athletic pursuits as a distance runner. These experiences sparked my interest into exploring data and programming leading me to work on projects using Python, Javascript, and Mathematical Modeling.
+        <div class="profile-pic">
+            <img src="https://archives.bulbagarden.net/media/upload/thumb/f/fb/0001Bulbasaur.png/500px-0001Bulbasaur.png" alt="Jacky">
+        </div>
+        <p>Hey <span id="name">Jacky</span> I am currently learning the art of Computer Science at the University of Pennsylvania. This site showcases my journey with Computer Science. I spend most of my time in balancing my academic interests like machine learning, health sciences, and data visualization, along with my athletic pursuits as a distance runner. These experiences sparked my interest into exploring data and programming leading me to work on projects using Python, Javascript, and Mathematical Modeling.
     </section>
 
     <section class="projects-container">
@@ -35,7 +36,8 @@ import favicon from './assets/favicon.svg';
         margin: 0;
         font-size: 10px;
         font-family: Arial, Helvetica, sans-serif;
-        --orange-color: rgb(226, 99, 20);
+        --orange-color: rgb(223, 96, 22);
+        --purple-color: rgb(148, 9, 235);
     }
     main {
         display: flex;
@@ -46,6 +48,16 @@ import favicon from './assets/favicon.svg';
         padding: 2rem;
         width: 50%; 
         min-width: 400px;
+    }
+
+    .intro-container {
+        width: 100%;
+    }
+
+    #name {
+        text-align: left;
+        color: var(--purple-color);
+        font-size: 1rem;
     }
 
     .header-container,
@@ -76,8 +88,8 @@ import favicon from './assets/favicon.svg';
 
     .title {
         font-size: 1rem;
-        opacity: 0.8;
-        color: var(--orange-color);
+        opacity: 1;
+        color: var(--purple-color);
     }
 
     .summary-container {
@@ -91,8 +103,28 @@ import favicon from './assets/favicon.svg';
         padding: 0;      
         margin: 0;  
         font-size: 1rem;
-        color: aliceblue;     
+        color: aliceblue;  
     }
+
+    .profile-pic {
+        box-shadow: inset 0 0 0 2px rgb(148, 9, 235);
+        border-radius: 5px;
+        width: 120px;
+        height: 120px;
+        padding: 0.3rem;
+        margin-right: 0.3rem;
+    }
+
+    img {
+        max-height:100%; 
+        max-width:100%;
+        object-fit: contain;
+    }
+
+    .summary-container .profile-pic {
+        float: left;   
+    }
+
 
     .social-links {
         list-style: none;
@@ -113,7 +145,7 @@ import favicon from './assets/favicon.svg';
     }
 
     .social-links a:hover {
-        color: var(--orange-color);
+        color: var(--purple-color);
     }
 
     i {
@@ -129,8 +161,8 @@ import favicon from './assets/favicon.svg';
     }
 
     .project-card:hover {
-        border: 1px solid var(--orange-color);
-        box-shadow: rgb(226, 99, 20) 0px 2px 4px, rgb(226, 99, 20) 0px 2px 4px;
+        border: 1px solid var(--purple-color);
+        box-shadow: var(--purple-color) 0px 2px 4px, var(--purple-color) 0px 2px 4px;
         transition: 0.7s;
     }
 
