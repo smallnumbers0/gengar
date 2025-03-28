@@ -3,7 +3,7 @@
 
 <div class="navigation-container">
     <ul class="social-links">
-        <li><a href="/"><i class="fa fa-home"></i></a></li>
+        <li><a href="/">Home <i class="fa fa-home"></i></a></li>
         <li><a href="https://github.com/smallnumbers0" target="_blank"><i class="fa fa-github"></i></a></li>
         <li><a href="https://www.linkedin.com/in/jackykchoi/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
     </ul>
@@ -35,7 +35,7 @@
     .social-links li {
         display: inline-block;
     }
-    .title {
+    /* .title {
         font-size: 1rem;
         opacity: 1;
         color: var(--purple-color);
@@ -44,7 +44,7 @@
     .title:hover {
         font-size: 1rem;
         color: var(--purple-color);
-    }
+    } */
     .navigation-container {
         display: flex;
         flex-direction: row;
@@ -75,13 +75,18 @@
         padding: 0 0.3 0.3 0.3rem;
     }
 
+    .social-links a {
+        padding: 0.2rem;
+    }
+
     a:hover {
         color: var(--purple-color);
         transition: 0.9s;
+        box-shadow: inset 0 0 0 2px var(--purple-color);
     }
 
     .right-nav-container a {
-        padding: 0.5rem;
+        padding: 0.2rem;
     }
 
     .right-nav-container a:hover {
