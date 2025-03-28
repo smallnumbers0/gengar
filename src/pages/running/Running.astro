@@ -2,12 +2,14 @@
 import Layout from "../../layouts/Layout.astro"
 import Strava from "../../components/Strava.astro"
 import Navigation from "../../components/Navigation.astro"
+import Chapter1 from "./chapter1.md"
 ---
 
 <Layout>
-    <main>
+    <main class="markdown">
         <Navigation/>
         <!-- <Strava /> -->
+        <Chapter1 />
     </main>
 </Layout>
 
@@ -22,7 +24,7 @@ import Navigation from "../../components/Navigation.astro"
     }
    main {
         display: flex;
-        align-items: center;
+        /* align-items: center; */
         justify-content: center;
         flex-direction: column;
         margin: 0 auto;
