@@ -6,7 +6,7 @@ So how does this relate to running? It has everything to do with running and als
 
 Let me give you can example: You have a Calculus test in a few days. In the past, you studied but did not do so well. You decide that you this time you are gonna go all in and study so fucking hard that you will get an A on the exam. You got a C again. You thought, maybe its the dam doom scrolling again. Stuck as a level 5 pokemon, you begin to wonder if you are just dumb. You are not. Your approach was just all wrong. NEVER EVER go all in on something. Its not about going all in. Most people's brain do not work that way and you are not any different. 
 
-Just like optimizing your improvements in running, its best to do only a little bit each day. An ideal running week plan for a beginner would look like this: 
+Just like optimizing your improvements in running, its best to do only a little bit each day and then go watch an episode of anime. An ideal running week plan for a beginner would look like this: 
 
 M: 10 minute walk -> 10 minute slow jog  
 T: 20 minute slow jog  
