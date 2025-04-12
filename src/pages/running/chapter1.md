@@ -19,4 +19,6 @@ BTW if these feel like you are breathing too hard, then you are going too fast a
 
 You see how little time this is-less than 21 minutes per day, but is also proven to be super effective in improving running by a lot. Notice how they are not on it for 10 hours doing an all in maxed out session of running hoping they will improve faster. Your timed learning sessions should look like this. Everyday in small chunks at a time. Each small chunk of running or studying is a rare candy. You need time to digest this rare candy. As you do this day by day, week by week, you'll start to notice you absorb information faster than Usain Bolt's world records.
 
-Ok now that we understand the cycle of self sabotage, we can finally get into learning about running ->
+We are all experts of self sabotage.
+
+Ok now that we understand the cycle of self sabotage, we can finally get into learning about running -> 
