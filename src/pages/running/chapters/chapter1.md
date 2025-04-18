@@ -24,4 +24,5 @@ You see how little running time this is less than 21 minutes per day, but is als
 
 We are all experts of self sabotage.
 
-Ok now that we understand the cycle of self sabotage, we can finally get into learning about running.
+Ok now that we understand the cycle of self sabotage, we can finally get into learning about running.  
+This book is made for beginner's, so if you are not a beginner, it might be better for you to read something else. Or not. It's up to you.
