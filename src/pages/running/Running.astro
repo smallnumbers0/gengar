@@ -1,17 +1,53 @@
 ---
-import Layout from "../../layouts/Layout.astro"
-import Strava from "../../components/Strava.astro"
-import Navigation from "../../components/Navigation.astro"
-import Chapter1 from "./chapter1.md"
+import Layout from "../../layouts/Layout.astro";
+import Navigation from "../../components/Navigation.astro";
+// import { useState } from "react"; dont want to use this yet
+const chapters = import.meta.glob("./chapters/*.md", { eager: true }) as Record<string, { frontmatter: { title?: string }; default: any }>;
+console.log(chapters);
 ---
 
 <Layout>
     <main class="markdown">
-        <Navigation/>
-        <!-- <Strava /> -->
-        <Chapter1 />
+        <Navigation />
+    
+
+        <section id="chapter-container">
+            {Object.entries(chapters).map(([path, chapter], index) => (
+                <div id={`chapter-${index}`} class={`chapter ${index === 0 ? "active" : ""}`}>
+                    <chapter.default />
+                    <div class="chapter-switcher">
+                        {index > 0 && (
+                            <button onclick={`switchChapter(${index - 1})`}>Previous Chapter</button>
+                        )}
+                        {index < Object.entries(chapters).length - 1 && (
+                            <button onclick={`switchChapter(${index + 1})`}>Next Chapter</button>
+                        )}
+                    </div>
+                </div>
+            ))}
+        </section>
     </main>
 </Layout>
+
+<script>
+    declare global {
+        interface Window {
+            switchChapter: (index: number) => void;
+        }
+    }
+
+    function switchChapter(index: number) {
+        document.querySelectorAll(".chapter").forEach((chapter) => {
+            chapter.classList.remove("active");
+        });
+
+        const chapterElement = document.getElementById(`chapter-${index}`);
+        if (chapterElement) {
+            chapterElement.classList.add("active");
+        }
+    }
+    window.switchChapter = switchChapter;
+</script>
 
 <style>
 
@@ -21,28 +57,46 @@ import Chapter1 from "./chapter1.md"
         margin: 0;
         font-size: 10px;
         font-family: Arial, Helvetica, sans-serif;
-    }
-   main {
+        --orange-color: rgb(223, 96, 22);
+        --purple-color: rgb(148, 9, 235);
+    }   
+    main {
         display: flex;
-        /* align-items: center; */
+        align-items: center;
         justify-content: center;
         flex-direction: column;
         margin: 0 auto;
         padding: 2rem;
-        width: 50%;
+        width: 50%; 
         min-width: 400px;
-        max-width: 1200px;
     }
 
-    @media screen and (max-width: 1024px) {
-        main {
-            min-width: 800px;
-        }
+    .chapter {
+        display: none;
     }
 
-    @media screen and (max-width: 900px) {
-        main {
-            min-width: 370px;
-        }
+    .chapter.active {
+        display: block;
+    }
+
+    .chapter-switcher {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .chapter-switcher button {
+        padding: 0.5rem;
+        font-size: 1rem;
+        cursor: pointer;
+        background-color: rgb(247, 69, 4);
+        color: white;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .chapter-switcher button:hover {
+        background-color: rgb(108, 9, 228);
+        transition: 0.6s;
     }
 </style>
