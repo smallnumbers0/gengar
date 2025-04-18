@@ -39,7 +39,7 @@ High Knees
 Butt Kickers  
 Burpees  
 
-Do a mixture of these for 20 minutes every other day and you do not need to do all of them in a day, but make sure to teach each exercise at least once a week and focus more on ones you feel weak with.  
+Do a mixture of these for 20 minutes every other day and you do not need to do all of them in a day, but make sure to touch each exercise at least once a week and focus more on ones you feel weak with.  
 Strength training is good for building strong tendons so that the impact of running does not destroy your body. It's your body guard from injury.
 There is also too much research that goes on in the metabolic level to explain every benefit of this so just do it along with your running. It's very important that you stick with the basics and ignore the fancy shit you see on youtube though.
 
