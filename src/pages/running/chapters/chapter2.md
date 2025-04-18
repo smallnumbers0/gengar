@@ -51,11 +51,11 @@ Side Note 1000: It does not matter whether you are jogging on a hill, on a tread
 Also stop at stoplights, it doesn't matter and won't affect your overall potential fitness gains.
 ### Week 1
 
-M: 10 minute walk + 10 minute slow jog + strength training
+M: 10 minute walk + 10 minute slow jog + strength training  
 T: 20 minute slow jog  
-W: 10 minute walk + 10 minute slow jog  + strength training
+W: 10 minute walk + 10 minute slow jog  + strength training  
 Th: 20 minute slow jog  
-F: 10 minute walk + 10 minute slow jog  + strength training
+F: 10 minute walk + 10 minute slow jog  + strength training  
 Sa: 10 minute walk + 10 minute slow jog  
 Su: 20 minute slow jog  + strength training  
 Most of these jogs should be very slow and easy at a heart rate of around 130 if possible (Hard for beginners but it'll drop to this eventually so dont worry about those stats for now)
